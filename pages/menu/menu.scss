@@ -1,0 +1,60 @@
+@import "../styles/variables";
+
+.main {
+  margin: 0 auto;
+  width: $window_width;
+  padding-top: 50px;
+
+  &__blocks {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 270px;
+  width: 270px;
+  background: #FFFFFF;
+  box-shadow: 10px 20px 40px 10px rgba(0, 81, 76, 0.25);
+  padding: 25px;
+
+  &__caption {
+    color: $caption_font_color;
+    font-size: $caption_font_size;
+    font-weight: $caption_font_weight;
+    margin: 0;
+    text-align: center;
+  }
+
+  &__img{
+    object-fit: cover;
+    //width: 350px;
+    //height: 350px;
+  }
+}
+
+.classes {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    background: #005151;
+    color: $white_color;
+    cursor: pointer;
+
+    &:hover {
+      background: #31DE70;
+    }
+  }
+}

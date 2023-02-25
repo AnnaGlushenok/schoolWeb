@@ -1,0 +1,49 @@
+@import "variables";
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 60px;
+  background: $navbar_color;
+
+  * {
+    color: $white_color;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    width: $window_width;
+    align-items: center;
+    gap: 25px;
+  }
+
+  &__enterBtn {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #FFFFFF;
+    background: transparent;
+    font-size: 14px;
+    cursor: pointer;
+
+    &:hover {
+      background: $white_color;
+    }
+  }
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+
+  &__item {
+    > a {
+      text-decoration: none;
+    }
+  }
+}
