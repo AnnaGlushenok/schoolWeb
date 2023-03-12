@@ -1,7 +1,7 @@
 .main {
   margin: 0 auto;
   width: min(1170px, 100vw);
-  padding-top: 50px;
+  padding: 50px 10px;
 }
 .main__blocks {
   display: flex;
@@ -17,7 +17,7 @@
   justify-content: space-between;
   height: 270px;
   width: 270px;
-  background: #FFFFFF;
+  background: white;
   box-shadow: 10px 20px 40px 10px rgba(0, 81, 76, 0.25);
   padding: 25px;
   text-decoration: none;

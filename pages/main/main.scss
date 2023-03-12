@@ -3,7 +3,7 @@
 .main {
   margin: 0 auto;
   width: $window_width;
-  padding-top: 50px;
+  padding: 50px 10px;
 
   &__blocks {
     display: flex;
@@ -30,7 +30,7 @@
     margin: 0;
   }
 
-  &__img{
+  &__img {
     object-fit: cover;
     width: 350px;
     height: 350px;
@@ -52,7 +52,7 @@
     color: $white_color;
     cursor: pointer;
     text-decoration: none;
-    
+
     &:hover {
       background: #31DE70;
     }
