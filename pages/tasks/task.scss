@@ -3,8 +3,7 @@
 .main {
   margin: 0 auto;
   width: $window_width;
-  padding-top: 50px;
-
+  padding:50px 10px;
 }
 
 .container {
@@ -34,7 +33,7 @@
   &__title {
     font-size: $caption_font_size;
     font-weight: $caption_font_weight;
-    color: $caption_color;
+    color: $caption_font_color;
   }
 
   &__active {
