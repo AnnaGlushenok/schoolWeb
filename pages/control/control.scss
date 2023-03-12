@@ -1,0 +1,143 @@
+@import "../styles/variables";
+
+.main {
+  margin: 0 auto;
+  width: $window_width;
+  padding: 50px 10px;
+}
+
+.container {
+  &__block {
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  &__caption {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 30px;
+  }
+
+  &__example {
+
+  }
+}
+
+.button {
+  width: 220px;
+  height: 60px;
+  background: $white_color;
+  border-radius: 50px;
+  border: none;
+  color: $burgundy_color;
+  font-size: $text_font_size;
+  box-shadow: 0 10px 20px rgba(82, 0, 29, 0.2);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: $hover_color;
+  color: $white_color;
+  box-shadow: 0 10px 20px rgba(49, 222, 112, 0.7);
+  transform: translateY(-10px);
+  transition: 0.3s;
+}
+
+.table_container {
+  display: flex;
+  justify-content: center;
+}
+
+.table {
+  width: 570px;
+  height: 292px;
+  border-collapse: collapse;
+  border: 1px solid #000000;
+
+  &__row, &__cell {
+    border: 1px solid grey;
+    text-align: center;
+  }
+
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  cursor: default;
+  align-items: center;
+
+  &__arrow {
+    width: 30px;
+    height: 30px;
+    rotate: 0;
+    transition: 0.5s;
+  }
+
+  &__title {
+    font-size: $caption_font_size;
+    font-weight: $caption_font_weight;
+    color: $caption_font_color;
+  }
+
+  &__active {
+    img {
+      transition: 0.5s;
+      rotate: 90deg;
+    }
+  }
+}
+
+
+.item {
+  &__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: $text_font_size;
+    color: $burgundy_color;
+  }
+
+  &__check_box {
+    background-image: url("../../images/cross.svg");
+    width: 30px;
+    height: 30px;
+    border: 1px $burgundy_color solid;
+  }
+
+  &__done {
+    color: $green_color;
+
+  }
+}
+
+.caption {
+  &__caption {
+    font-size: $title_font_size;
+    color: $caption_font_color;
+    font-weight: $caption_font_weight;
+    margin: 0;
+  }
+
+
+}
