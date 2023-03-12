@@ -8,6 +8,7 @@
   &__blocks {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
   }
 }
@@ -34,9 +35,9 @@
   }
 
   &__img {
-    object-fit: cover;
-    //width: 350px;
-    //height: 350px;
+    object-fit: contain;
+    width: 250px;
+    height: 250px;
   }
 }
 

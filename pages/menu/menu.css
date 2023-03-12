@@ -6,6 +6,7 @@
 .main__blocks {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -30,7 +31,9 @@
   text-align: center;
 }
 .block__img {
-  object-fit: cover;
+  object-fit: contain;
+  width: 250px;
+  height: 250px;
 }
 
 .classes {
