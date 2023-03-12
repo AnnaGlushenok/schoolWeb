@@ -19,6 +19,8 @@
   background: #FFFFFF;
   box-shadow: 10px 20px 40px 10px rgba(0, 81, 76, 0.25);
   padding: 25px;
+  text-decoration: none;
+  cursor: pointer;
 }
 .block__caption {
   color: #002B2B;
