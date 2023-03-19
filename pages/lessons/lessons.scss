@@ -1,0 +1,56 @@
+@import "../styles/variables";
+
+.main {
+  margin: 0 auto;
+  width: $window_width;
+  padding: 50px 10px;
+}
+
+.container {
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  cursor: default;
+  align-items: center;
+
+  &__arrow {
+    width: 30px;
+    height: 30px;
+    rotate: 0;
+    transition: 0.5s;
+  }
+
+  &__title {
+    font-size: $caption_font_size;
+    font-weight: $caption_font_weight;
+    color: $caption_font_color;
+  }
+
+  &__active {
+    img {
+      transition: 0.5s;
+      rotate: 90deg;
+    }
+  }
+}
+
+.links {
+  padding-left: 50px;
+
+  &__link {
+    text-decoration: none;
+    font-size: $text_font_size;
+    color: $caption_font_color;
+
+  }
+}

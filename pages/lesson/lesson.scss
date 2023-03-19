@@ -1,0 +1,24 @@
+@import "../styles/variables";
+
+.main {
+  margin: 0 auto;
+  width: $window_width;
+  padding: 20px 10px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    font-size: $caption_font_size;
+    font-weight: $caption_font_weight;
+    color: $caption_font_color;
+  }
+
+  &__text {
+    margin: 10px;
+    text-align: left;
+  }
+}
