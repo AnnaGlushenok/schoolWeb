@@ -4,6 +4,7 @@
   justify-content: center;
   height: 60px;
   background: #00514C;
+  padding: 0 1rem;
 }
 .navbar * {
   color: white;
@@ -26,6 +27,7 @@
 }
 .navbar__enterBtn:hover {
   background: white;
+  color: #00514C;
 }
 
 .items {

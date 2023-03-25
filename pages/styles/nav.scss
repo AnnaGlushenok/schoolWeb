@@ -6,6 +6,7 @@
   justify-content: center;
   height: 60px;
   background: $navbar_color;
+  padding: 0 1rem;
 
   * {
     color: $white_color;
@@ -30,6 +31,7 @@
 
     &:hover {
       background: $white_color;
+      color: $navbar_color;
     }
   }
 }
