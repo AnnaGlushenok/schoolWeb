@@ -1,7 +1,6 @@
 .main {
   margin: 0 auto;
   width: min(1170px, 100vw);
-  padding: 50px 10px;
 }
 
 .container__block {
@@ -11,6 +10,12 @@
   max-height: 0;
   overflow: hidden;
   transition: 0.5s;
+}
+.container__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0 30px;
 }
 
 .title {
@@ -41,7 +46,31 @@
 .links__link {
   text-decoration: none;
   font-size: 20px;
+  color: #00A110;
+}
+.links__link:hover {
   color: #002B2B;
+}
+
+.button {
+  width: 220px;
+  height: 60px;
+  background: white;
+  border-radius: 50px;
+  border: none;
+  color: #52001D;
+  font-size: 20px;
+  box-shadow: 0 10px 20px rgba(82, 0, 29, 0.2);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #31DE70;
+  color: white;
+  box-shadow: 0 10px 20px rgba(49, 222, 112, 0.7);
+  transform: translateY(-10px);
+  transition: 0.3s;
 }
 
 /*# sourceMappingURL=lessons.css.map */

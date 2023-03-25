@@ -3,7 +3,6 @@
 .main {
   margin: 0 auto;
   width: $window_width;
-  padding: 50px 10px;
 }
 
 .container {
@@ -14,6 +13,13 @@
     max-height: 0;
     overflow: hidden;
     transition: 0.5s;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 30px;
   }
 }
 
@@ -50,7 +56,32 @@
   &__link {
     text-decoration: none;
     font-size: $text_font_size;
-    color: $caption_font_color;
+    color: $green_color;
 
   }
+
+  &__link:hover {
+    color: $caption_font_color;
+  }
+}
+
+.button {
+  width: 220px;
+  height: 60px;
+  background: $white_color;
+  border-radius: 50px;
+  border: none;
+  color: $burgundy_color;
+  font-size: $text_font_size;
+  box-shadow: 0 10px 20px rgba(82, 0, 29, 0.2);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: $hover_color;
+  color: $white_color;
+  box-shadow: 0 10px 20px rgba(49, 222, 112, 0.7);
+  transform: translateY(-10px);
+  transition: 0.3s;
 }

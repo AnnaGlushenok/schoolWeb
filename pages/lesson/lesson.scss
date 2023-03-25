@@ -1,24 +1,46 @@
 @import "../styles/variables";
 
 .main {
-  margin: 0 auto;
+  margin: 0px auto;
   width: $window_width;
-  padding: 20px 10px;
+}
+
+@media screen and (max-width: 1170px) {
+  .main__content {
+    padding: 1rem;
+  }
 }
 
 .text {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  font-size: $text_font_size;
 
   &__title {
     font-size: $caption_font_size;
     font-weight: $caption_font_weight;
     color: $caption_font_color;
+    align-self: center;
   }
 
   &__text {
-    margin: 10px;
-    text-align: left;
+    margin: 7px;
+    text-align: justify;
+  }
+
+  &__fact {
+    border-bottom: $navbar_color solid 2px;
+    border-top: $navbar_color solid 2px;
+    color: $navbar_color;
+    padding: 10px 0 10px 36px;
+    text-align: justify;
+  }
+
+  &__formula {
+    text-align: center;
+  }
+
+  img {
+    align-self: center;
   }
 }
