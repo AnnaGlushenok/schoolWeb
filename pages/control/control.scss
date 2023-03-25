@@ -31,10 +31,6 @@
     align-items: center;
     margin: 15px 0 30px;
   }
-
-  &__example {
-
-  }
 }
 
 .button {
@@ -105,29 +101,35 @@ button:hover {
 
 
 .item {
-  &__item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
+  &__check_box {
+    background: url("../../images/cross.svg") center center;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    border: 1px $burgundy_color solid;
   }
 
   &__text {
     margin: 0;
     font-size: $text_font_size;
     color: $burgundy_color;
+    user-select: none;
   }
 
-  &__check_box {
-    background-image: url("../../images/cross.svg");
-    width: 30px;
-    height: 30px;
-    border: 1px $burgundy_color solid;
+  &__hidden_checkbox:checked + &__check_box {
+    background: url("../../images/done_arrow.svg") center center;
+    border: 1px $green_color solid;
   }
 
-  &__done {
+  &__hidden_checkbox:checked + &__check_box + &__text {
     color: $green_color;
+  }
 
+  &__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
   }
 }
 
@@ -138,6 +140,4 @@ button:hover {
     font-weight: $caption_font_weight;
     margin: 0;
   }
-
-
 }

@@ -25,6 +25,7 @@
   align-items: center;
   margin: 15px 0 30px;
 }
+
 .button {
   width: 220px;
   height: 60px;
@@ -84,25 +85,31 @@ button:hover {
   rotate: 90deg;
 }
 
-.item__item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
+.item__check_box {
+  background: url("../../images/cross.svg") center center;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  border: 1px #52001D solid;
 }
 .item__text {
   margin: 0;
   font-size: 20px;
   color: #52001D;
+  user-select: none;
 }
-.item__check_box {
-  background-image: url("../../images/cross.svg");
-  width: 30px;
-  height: 30px;
-  border: 1px #52001D solid;
+.item__hidden_checkbox:checked + .item__check_box {
+  background: url("../../images/done_arrow.svg") center center;
+  border: 1px #00A110 solid;
 }
-.item__done {
+.item__hidden_checkbox:checked + .item__check_box + .item__text {
   color: #00A110;
+}
+.item__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 }
 
 .caption__caption {
