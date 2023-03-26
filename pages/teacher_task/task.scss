@@ -1,0 +1,28 @@
+@import "../styles/variables";
+
+.main {
+  margin: 0 auto;
+  width: $window_width;
+  padding: 50px 10px;
+
+  &__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+.title {
+  &__title {
+    margin: 0;
+    font-size: $caption_font_size;
+    color: $caption_font_color;
+    white-space: nowrap;
+    white-space: pre;
+  }
+
+  &__text{
+    width:100%;
+  }
+}

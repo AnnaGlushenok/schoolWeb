@@ -1,0 +1,115 @@
+@import "../styles/variables";
+
+.main {
+  margin: 0 auto;
+  width: $window_width;
+
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+  }
+}
+
+.block {
+  &__card {
+    width: 770px;
+    height: 480px;
+    border: 2px solid $navbar_color;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 45px;
+  }
+}
+
+.card {
+  color: $caption_font_color;
+
+
+  &__question_number {
+    font-size: 30px;
+    color: $navbar_color;
+    margin: 0;
+  }
+
+  &__question_caption {
+    font-size: $caption_font_size;
+    font-weight: $caption_font_weight;
+    margin: 20px;
+  }
+
+  &__questions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__question {
+    font-size: $caption_font_size;
+  }
+
+  &__button {
+    width: 220px;
+    height: 60px;
+    filter: drop-shadow(0px 10px 20px rgba(0, 81, 76, 0.3));
+    background: $navbar_color;
+    color: $white_color;
+    border: none;
+    border-radius: 50px;
+    transition: 0.3s;
+  }
+
+  &__button:hover {
+    transform: translateY(-10px);
+    transition: 0.3s;
+    margin: 0;
+  }
+
+  &__datetime {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: $caption_font_size;
+    margin: 0;
+  }
+
+  &__mark {
+    font-size: 48px;
+  }
+}
+
+.datetime {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:10px;
+
+  &__left_block {
+    text-align: right;
+  }
+
+  &__right_block {
+    text-align: left;
+  }
+
+  &__text {
+    font-size: $text_font_size;
+    line-height: 1.5;
+  }
+}
+
+.question {
+  &__checkbox {
+    height: 18px;
+    width: 18px;
+    border: none;
+    accent-color: $navbar_color;
+  }
+}
