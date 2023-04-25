@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: row;
     justify-content: right;
-    width: max(100vw, 1170px);
+    width: $window_width;
     align-items: center;
     gap: 25px;
   }
@@ -46,15 +46,24 @@
 }
 
 .dropdown {
-  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 
-  &__title :hover {
+  &__title {
+    margin: 20px;
+  }
+
+  &__title:hover {
     background: $caption_font_color;
+    padding: 30px 20px;
+    margin: 0;
   }
 
   > a + * {
     position: absolute;
-    top: 1rem;
+    top: 2.4rem;
     background: $caption_font_color;
     text-align: center;
   }
@@ -67,9 +76,10 @@
   &__item:has(.dropdown__subitem) {
     background: $caption_font_color;
     position: relative;
+    width: 86px;
+    padding: 5px 25px;
 
     .dropdown__subitem {
-      width: 100%;
       position: absolute;
       right: 100%;
       top: 0;
@@ -86,3 +96,7 @@
   }
 }
 
+.item {
+  width: 86px;
+  padding: 5px 25px;
+}
