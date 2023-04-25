@@ -10,7 +10,39 @@
     flex-direction: row;
     justify-content: center;
     gap: 10px;
+    padding-bottom: 20px;
   }
+
+  &__buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 270px);
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    padding-top: 50px;
+  }
+
+  &__page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+#dnd {
+  width: 100px;
+  height: 100px;
+  border: 1px dashed black;
+}
+
+#dnd[data-over="true"] {
+  background: rgba(0, 0, 0, .1);
+}
+
+img {
+  display: inline-block;
+  height: 100px;
+  margin-right: 5px;
+  margin-top: 5px;
 }
 
 .title {
@@ -22,7 +54,64 @@
     white-space: pre;
   }
 
-  &__text{
-    width:100%;
+  &__text {
+    width: 100%;
+    font-size: $text_font_size;
+  }
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.block {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+
+  &__content {
+    width: $window_width;
+    resize: both;
+    min-height: 40px;
+    border: black solid 1px;
+    padding: 10px;
+  }
+
+  //&__content[contenteditable]:empty::before {
+  //}
+
+  &__delete_button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    background: $white_color;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.button {
+  &__button {
+    width: 270px;
+    height: 65px;
+    border: none;
+    border-radius: 50px;
+    background: $navbar_color;
+    color: $white_color;
+    font-size: $caption_font_size;
+  }
+
+  .center {
+    grid-column: 1/5;
+    justify-self: center;
   }
 }

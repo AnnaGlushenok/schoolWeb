@@ -2,16 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-
+    <title>Некич</title>
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="task.css">
+    <script src="task.js" defer></script>
 </head>
 <body>
 <main class="main">
     <div class="main__title title">
         <p class="title__title">Название темы:</p>
         <input type="text" class="title__text">
+    </div>
+    <div class="main__page page"></div>
+<!--    <form action="/upload" method="post" encType="multipart/form-data">-->
+<!--        <input type="file" name="image" accept="image/*">-->
+<!--        <input type="submit" value="Upload">-->
+<!--    </form>-->
+
+    <div class="main__buttons button">
+        <button class="button__button" onclick="addImage()">+ изображение</button>
+        <button class="button__button" onclick="addContent()">+ содержание</button>
+        <button class="button__button" onclick="addFormula()">+ формула</button>
+        <button class="button__button" onclick="addFact()">+ факт</button>
+        <button class="button__button center" onclick="save()">Сохранить</button>
     </div>
 </main>
 </body>
