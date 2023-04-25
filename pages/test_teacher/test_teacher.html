@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Тест</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="test_teacher.css">
+    <script src="test_teacher.js" defer></script>
+</head>
+<body>
+<main>
+    <div class="main__block block">
+        <div class="block__card card">
+            <div class="card__question_title question_title">
+                <input type="text" class="question_title__question" name="question" placeholder="Вопрос">
+                <select name="question_types" class="question_title__combobox" id="question_type">
+                    <option>1 выбор</option>
+                    <option>Чек боксы</option>
+                    <option>Самому написать</option>
+                </select>
+            </div>
+
+            <div class="card__questions questions"><button class="questions__add_btn" onclick="addQuestion()">
+                    <img class="questions__img" src="../../images/plus.svg" alt="plus">
+                </button></div>
+
+        </div>
+        <button class="block__button" onclick="addCard()">Добавить</button>
+    </div>
+</main>
+</body>
+</html>

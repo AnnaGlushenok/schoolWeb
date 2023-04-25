@@ -1,0 +1,115 @@
+@import "../styles/variables";
+
+.main {
+  margin: 0 auto;
+  width: $window_width;
+  font-size: $text_font_size;
+
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+  }
+}
+
+.block {
+  &__card {
+    width: 970px;
+    height: auto;
+    border: 1px solid $navbar_color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 30px;
+  }
+
+  &__button {
+    width: 200px;
+    height: 48px;
+    border: none;
+    border-radius: 50px;
+    background: $navbar_color;
+    color: $white_color;
+    font-size: $text_font_size;
+    margin: 10px;
+  }
+}
+
+.card {
+  &__question_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+}
+
+.question_title {
+  &__question {
+    width: 70%;
+    height: 20px;
+    outline: none;
+    border: none;
+    border-bottom: solid $navbar_color 2px;
+  }
+
+  &__combobox {
+    height: 25px;
+    border: solid $navbar_color 1px;
+    width: 25%;
+  }
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &__question {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__add_btn {
+    width: 35px;
+    height: 35px;
+    border: none;
+    background: $white_color;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.question {
+  &__text {
+    width: 95%;
+    height: 20px;
+    outline: none;
+    border: none;
+    border-bottom: solid $navbar_color 1px;
+  }
+
+  &__add_btn {
+    width: 35px;
+    height: 35px;
+    border: none;
+    background: $white_color;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__img {
+    width: 30px;
+    height: 30px;
+  }
+}
