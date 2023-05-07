@@ -5,23 +5,30 @@
     <title>Авторизация</title>
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="../styles/nav.css">
+    <script src="auth.js" defer></script>
 </head>
 <body>
+<nav class="navbar">
+    <div class="navbar__wrapper">
+        <div class="navbar__items items">
+            <div class="items__item"><a target="_blank" href="../main/index.html">Главная</a></div>
+            <div class="items__item"><a target="_blank" href="#">Задать вопрос</a></div>
+            <div class="items__item"><a target="_blank" href="#">Об авторе</a></div>
+        </div>
+        <button class="navbar__enterBtn">Войти</button>
+    </div>
+</nav>
 <main class="main">
     <div class="main__block block">
-        <div class="block__form form">
-            <input class="form__input" type="text" placeholder="Фамилия">
-            <input class="form__input" type="text" placeholder="Имя">
-            <input class="form__input" type="text" placeholder="Отчество">
-            <input class="form__input" type="text" placeholder="Номер класса">
-            <input class="form__input" type="text" placeholder="Логин">
-            <input class="form__input" type="password" placeholder="Пароль">
+        <form class="block__form form">
+            <input class="form__input" type="text" required pattern="[A-Za-z(\d+)?]{4,}" placeholder="Логин">
+            <input class="form__input" type="password" required pattern="[A-Za-z(\d+!@#$%^&*:;)?]{6,}"
+                   placeholder="Пароль">
             <div class="form__buttons buttons">
-                <button class="buttons__button">Войти</button>
-                <button class="buttons__button_registration">Регистрация</button>
-                <button class="buttons__button">Зарегистрироваться</button>
+                <button class="buttons__button" onclick="auth()">Войти</button>
             </div>
-        </div>
+        </form>
     </div>
 </main>
 </body>
