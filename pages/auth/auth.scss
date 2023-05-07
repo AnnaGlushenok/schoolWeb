@@ -35,7 +35,15 @@
   }
 
   &__input::placeholder {
-    color: rgba(0, 43, 43, 0.65);
+    color: $fuchsia;
+  }
+
+  &__input:invalid {
+    border-bottom: solid $fuchsia 2px;
+  }
+
+  &__input:valid {
+    border-bottom: solid $green_color 2px;
   }
 }
 

@@ -30,7 +30,13 @@
   padding-left: 20px;
 }
 .form__input::placeholder {
-  color: rgba(0, 43, 43, 0.65);
+  color: #AB1594;
+}
+.form__input:invalid {
+  border-bottom: solid #AB1594 2px;
+}
+.form__input:valid {
+  border-bottom: solid #00A110 2px;
 }
 
 .buttons {
