@@ -1224,35 +1224,6 @@
 							}
 						},
 						{
-							"_type": "UMLNoteView",
-							"_id": "AAAAAAGG5n9ciY+hvBo=",
-							"_parent": {
-								"$ref": "AAAAAAGG5lVQoIv48Eo="
-							},
-							"font": "Arial;13;0",
-							"left": 1056,
-							"top": 208,
-							"width": 177,
-							"height": 41,
-							"text": "Задание кр и в классе это одно и тоже ведь?"
-						},
-						{
-							"_type": "UMLNoteLinkView",
-							"_id": "AAAAAAGG5n/D6I+pczs=",
-							"_parent": {
-								"$ref": "AAAAAAGG5lVQoIv48Eo="
-							},
-							"font": "Arial;13;0",
-							"head": {
-								"$ref": "AAAAAAGG5n9ciY+hvBo="
-							},
-							"tail": {
-								"$ref": "AAAAAAGG5maP/I10Kpo="
-							},
-							"lineStyle": 1,
-							"points": "1037:250;1055:247"
-						},
-						{
 							"_type": "ERDRelationshipView",
 							"_id": "AAAAAAGG5oAh3o+zb3k=",
 							"_parent": {
@@ -1332,35 +1303,6 @@
 							"headNameLabel": {
 								"$ref": "AAAAAAGG5oAh3o+2sHU="
 							}
-						},
-						{
-							"_type": "UMLNoteView",
-							"_id": "AAAAAAGG5oB+2I/FfXQ=",
-							"_parent": {
-								"$ref": "AAAAAAGG5lVQoIv48Eo="
-							},
-							"font": "Arial;13;0",
-							"left": 1104,
-							"top": 368,
-							"width": 177,
-							"height": 38,
-							"text": "Необходимо знать — это id параграфов"
-						},
-						{
-							"_type": "UMLNoteLinkView",
-							"_id": "AAAAAAGG5oGR/4/NG+4=",
-							"_parent": {
-								"$ref": "AAAAAAGG5lVQoIv48Eo="
-							},
-							"font": "Arial;13;0",
-							"head": {
-								"$ref": "AAAAAAGG5oB+2I/FfXQ="
-							},
-							"tail": {
-								"$ref": "AAAAAAGG5mfa7o2rnr4="
-							},
-							"lineStyle": 1,
-							"points": "1061:404;1103:398"
 						},
 						{
 							"_type": "ERDRelationshipView",
