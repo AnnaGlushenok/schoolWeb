@@ -10,7 +10,7 @@
 <body>
 <main>
     <div class="main__block block">
-        <div class="block__card card">
+        <div class="block__card card" id="0">
             <div class="card__question_title question_title">
                 <input type="text" class="question_title__question" name="question" placeholder="Вопрос">
                 <select name="question_types" class="question_title__combobox" id="question_type">
@@ -19,13 +19,15 @@
                     <option>Самому написать</option>
                 </select>
             </div>
-
-            <div class="card__questions questions"><button class="questions__add_btn" onclick="addQuestion()">
+            <div class="questions__question question"></div>
+            <div class="card__questions questions">
+                <button class="questions__add_btn" onclick="addQuestion()">
                     <img class="questions__img" src="../../images/plus.svg" alt="plus">
-                </button></div>
-
+                </button>
+            </div>
         </div>
         <button class="block__button" onclick="addCard()">Добавить</button>
+        <button class="block__button" onclick="save()">Сохранить</button>
     </div>
 </main>
 </body>
